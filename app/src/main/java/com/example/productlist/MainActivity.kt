@@ -12,6 +12,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        supportActionBar!!.hide()
         val recyclerView_produtos = findViewById<RecyclerView>(R.id.recyclerView_produtos)
         recyclerView_produtos.layoutManager = LinearLayoutManager(this)
         recyclerView_produtos.setHasFixedSize(true)
